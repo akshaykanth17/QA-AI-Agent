@@ -1,0 +1,17 @@
+AI-Assisted Software Testing Agent — Sample Requirements Document
+Target System: Local Demo Web Application (Authentication & Access Control)
+
+Functional Requirements:
+1. The system shall provide a secure user login interface at /login.
+2. Users must provide a registered email address and password to authenticate.
+3. Upon successful authentication with valid credentials ('demo@example.com' / 'DemoPass@123'), the system shall redirect the user to the /dashboard page with a welcome greeting.
+4. If an invalid password is provided, the system shall retain the user on the login page and display 'Invalid email or password. Please try again.'.
+5. If the email field is submitted empty, the system shall display the error message 'Email address is required.'.
+6. If the password field is submitted empty, the system shall display the error message 'Password is required.'.
+7. If an improperly formatted email is submitted, the system shall display 'Email address format is invalid.'.
+8. The dashboard page shall contain a logout link that terminates the active user session and returns the user to /login.
+
+Security & Safety Rules:
+9. The testing agent must restrict browser automation to approved domains (localhost and 127.0.0.1).
+10. All passwords and session tokens must be redacted in test logs and execution reports.
+

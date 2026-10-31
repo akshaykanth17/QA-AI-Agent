@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — AI Testing Agent</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F3F4F6;
+      min-height: 100vh;
+    }
+    .navbar {
+      background: linear-gradient(135deg, #1F4E79, #2E75B6);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar h1 { color: #fff; font-size: 1.2rem; }
+    .navbar a { color: #BDD7EE; text-decoration: none; font-size: 0.9rem; }
+    .navbar a:hover { color: #fff; }
+    .content {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .welcome-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 2.5rem;
+      text-align: center;
+    }
+    .welcome-card .icon { font-size: 3rem; margin-bottom: 1rem; }
+    .welcome-card h2 { color: #1F4E79; margin-bottom: 0.5rem; }
+    .welcome-card p { color: #6B7280; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>🧪 AI Testing Agent — Dashboard</h1>
+    <a href="/logout" data-testid="logout-link">Log out</a>
+  </nav>
+  <div class="content">
+    <div class="welcome-card" data-testid="welcome-message">
+      <div class="icon">✅</div>
+      <h2>Welcome, {{ user }}!</h2>
+      <p>You have successfully logged in to the demo application.</p>
+    </div>
+  </div>
+</body>
+</html>
+
